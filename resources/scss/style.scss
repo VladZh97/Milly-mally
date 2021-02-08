@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+@import "abstracts/variables";
+@import "abstracts/typography";
+@import "abstracts/base";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/front-page";
+@import "pages/articles";
+@import "pages/single";
+@import "pages/page";
+@import "pages/page-about";
+@import "pages/page-offer";
+@import "pages/page-sale";
+@import "pages/page-contact";
+@import "pages/page-file";
+@import "pages/single-product";
+
+@import "vendors/bootstrap-grid.min.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,136 @@
+.service {
+  &__inner {
+    margin-top: 78px;
+  }
+  &__form {
+    &-right {
+      label{
+        color: #4E4E4E;
+        font-size: 1.2rem;
+        &:first-child {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+          .wpcf7-form-control-wrap {
+            position: relative;
+            cursor: pointer;
+            &::after {
+              content:"Wybierz plik";
+              font-family: 'Montserrat', sans-serif;
+              position: absolute;
+              top: 7px;
+              left: 23px;
+              border: none;
+              background-color: #004A87;
+              color: #fff;
+              text-transform: uppercase;
+              font-size: 1rem;
+              padding: 10px 20px;
+              font-weight: 700;
+              white-space: nowrap;
+            }
+          }
+        }
+        input[type="file"] {
+            position:relative;
+            width: 111px;
+            height: 31px;
+            &:focus {
+              outline: none;
+            }
+        }
+      }
+    }
+  }
+.wpcf7-form-control.wpcf7-file {
+  opacity: 0;
+}
+  .codedropz-upload-handler {
+    margin-top: 16px;
+    height: 214px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .codedropz-upload-container {
+    width: 100%;
+    padding: 15px 5px !important;
+  }
+  .codedropz-upload-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #484848;
+    font-size: 1.2rem;
+    font-weight: 400;
+    h4 {
+      font-weight: 400;
+      position: relative;
+      &::after {
+        content: url('../img/cloud-computing.png');
+        position: absolute;
+        top: -3px;
+        left: -35px;
+      }
+    }
+    span {
+      margin: 0 5px;
+    }
+    a {
+      text-decoration: underline !important;
+    }
+  }
+
+  .wpcf7-list-item-label,
+  .wpcf7-list-item {
+    font-size: 1rem;
+    line-height: 15px;
+  }
+  span.wpcf7-list-item:last-child {
+    margin-top: 0 !important;
+  }
+  .wpcf7-submit {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: $md - 1px) {
+.your-email,
+.your-name,
+.title,
+.your-message,
+.product-name,
+.phone-number,
+.address {
+  input,
+  textarea {
+    width: 100% !important;
+  }
+}
+.service {
+  &__form-right {
+    margin-top: 50px;
+    label {
+      &:first-child {
+        justify-content: center;
+      }
+    }
+  }
+}
+}
+@media screen and  (max-width: $sm) {
+  .codedropz-upload-inner {
+    margin-left: 20px;
+  }
+  .service .codedropz-upload-inner {
+    width: 95%;
+  }
+  .service__form-right {
+    label {
+      &:first-child {
+        max-width: 92%;
+      }
+    }
+  }
+}

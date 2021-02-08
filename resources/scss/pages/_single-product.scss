@@ -1,0 +1,145 @@
+#tab-description {
+  color: #222222;
+  h2  {
+    display: none;
+  }
+  p, span, li, a {
+    font-weight: 300;
+  font-size: 1.3rem !important;
+  color: #222222;
+  font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.single-product .vbox-overlay  {
+  z-index: 9999;
+}
+
+.woocommerce-product-details__short-description {
+  font-size: 1.3rem;
+  line-height: 25px;
+}
+
+.product_title.entry-title {
+  font-size: 2.4rem;
+  color: $accentDark;
+  margin-bottom: 40px;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  a {
+    font-size: 1.6rem;
+  }
+  padding-left: 0 !important;
+  &::before {
+    border: none !important;
+  }
+li {
+  border: none !important;
+  background-color: transparent !important;
+  &::after,
+  &::before {
+    display: none !important;
+  }
+}
+}
+
+.product {
+  .woocommerce-loop-product__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    .price {
+      display: none !important;
+    }
+  }
+}
+.woocommerce-tabs.wc-tabs-wrapper {
+  padding-top: 40px;
+}
+
+.single-product .products.columns-4,
+ .woocommerce .products ul {
+  justify-content: flex-start;
+}
+
+
+.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+  img {
+    transition: all .2s ease-in-out;
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+
+@media screen and (max-width: $lg) {
+  .products__row {
+    flex-direction: column;
+    .col-md-4,
+    .col-md-8 {
+      max-width: 100%;
+    }
+  }
+
+  .products .wpf_form {
+    padding: 20px 0 20px 50px;
+  }
+
+  .products__buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .products__buttons-second {
+    margin-top: 0;
+  }
+  .products__right  {
+    margin-top: 100px;
+  }
+
+  .products .dgwt-wcas-no-submit .dgwt-wcas-ico-magnifier {
+    right: -85%;
+  }
+
+  .products .wpf_form {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: $sm) {
+  .single-product .woocommerce ul.products li.product, .woocommerce-page ul.products li.product.product {
+    width: 100% !important;
+  }
+
+  .single-product .woocommerce ul.products.columns-4 li.product.product, .woocommerce-page ul.products.columns-4 li.product.product {
+    margin-right: 0 !important;
+  }
+  
+}
+
+@media screen and (max-width: 420px) {
+  .products__buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .products__buttons-first {
+    margin-right: 0;
+  }
+  .products__buttons-second {
+    margin-top: 13px;
+  }
+}
+
+
+.vbox-container {
+  overflow-y: hidden !important;
+}
+.single-product .vbox-title {
+  display: none !important;
+}

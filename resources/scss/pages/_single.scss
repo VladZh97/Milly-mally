@@ -1,0 +1,58 @@
+.main__article {
+  margin-top: 100px;
+}
+
+
+
+// PRIVACY
+
+.single {
+  &__main {
+      margin: 60px 0 120px;
+  }
+  &__title {
+      font-size: 2.5rem;
+      text-align: center;
+  }
+  &__text {
+      font-size: 1.6rem;
+      color: #1c1c1c;
+      line-height: 23px;
+  }
+}
+
+@media screen and (max-width: $sm) {
+.single {
+  &__main {
+      margin: 40px 0 80px;
+  }
+
+  &__text {
+      font-size: 1.5rem;
+  }
+}
+}
+
+
+.article {
+ &__row {
+   margin-top: 60px;
+ }
+  &__container {
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: #1c1c1c;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .wp-block-columns {
+    flex-direction: column;  
+  }
+  .wp-block-column {
+    &:last-child {
+      margin-top: 50px;
+      margin-left: 0 !important;
+    }
+  }
+}
