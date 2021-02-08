@@ -1,3 +1,3 @@
-# Milly-Nally WebSite
+# Milly-Mally WebSite
 
 https://millymally.pl/
