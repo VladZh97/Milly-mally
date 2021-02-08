@@ -1,17 +1,3 @@
-# webpack-wp-kit
-Webpack + WordPress Theme
+# Milly-Nally WebSite
 
-Pobranie modułow
-```
-yarn
-```
-
-Uruchomienie wersji developerskiej
-```
-yarn dev
-```
-
-Uruchomienie wersji produkcyjnej
-```
-yarn build
-```
+https://millymally.pl/
